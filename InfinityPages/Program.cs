@@ -1,7 +1,13 @@
+using InfinityPages.Context;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<InfinityPagesContext>(options => {
+    options.UseSqlServer("Server=DESKTOP-EETK5T9;Database=BookStore;Trusted_Connection=True;TrustServerCertificate=True");
+});
 
 var app = builder.Build();
 
@@ -22,6 +28,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=InfinityPages}/{action=Index}/{id?}");
 
 app.Run();
