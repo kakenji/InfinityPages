@@ -1,0 +1,41 @@
+﻿@model List<InfinityPages.Models.Book>
+
+@* @foreach(var book in Model){ *@
+@* 	<p>@book.Title | @book.Author | @book.Description</p> *@
+@* } *@
+@{
+    int rowcount = 1;
+}
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Title</th>
+            <th scope="col">Author</th>
+            <th scope="col">Description</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        @foreach(var book in Model){
+        <tr>
+            <th scope="row">@(rowcount++)</th>
+            <td>@book.Title</td>
+            <td>@book.Author</td>
+            <td>@book.Description</td>
+        </tr>
+        }
+
+</table>
+        @* <tr> *@
+        @*     <th scope="row">1</th> *@
+        @*     @foreach(var book in Model){ *@
+        @*         @foreach(var prop in Model.First().GetType().GetProperties()){ *@
+        @*             if(prop.Name == "Title"){ *@
+        @*                 <td>@book.Title</td> *@
+        @*             } *@
+        @*         } *@
+        @*     } *@
+        @* </tr> *@
