@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("InfinityPages")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fae05fbb185bbf8dfd5bb89620065110b7135ee7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+64ca7ef05a6ff10326a6384e8492ef52184d4d35")]
 [assembly: System.Reflection.AssemblyProductAttribute("InfinityPages")]
 [assembly: System.Reflection.AssemblyTitleAttribute("InfinityPages")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

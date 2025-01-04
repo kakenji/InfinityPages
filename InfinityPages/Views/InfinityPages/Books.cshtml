@@ -14,6 +14,7 @@
             <th scope="col">Title</th>
             <th scope="col">Author</th>
             <th scope="col">Description</th>
+            <th scope="col">Actions</th>
         </tr>
     </thead>
 
@@ -25,10 +26,15 @@
             <td>@book.Title</td>
             <td>@book.Author</td>
             <td>@book.Description</td>
+            <td>
+                <a asp-controller="InfinityPages" asp-action="Edit" class="btn btn-warning">Edit</a>
+                <a asp-controller="InfinityPages" asp-action="Delete" class="btn btn-danger">Delete</a>
+            </td>
         </tr>
         }
 
 </table>
+        <a asp-controller="InfinityPages" asp-action="Create" class="btn btn-success">Create</a>
         @* <tr> *@
         @*     <th scope="row">1</th> *@
         @*     @foreach(var book in Model){ *@
